@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemain.css">
+</head>
+
+<body>
+    <aside id="sidebar" class="sidebar sidebar-default open" role="navigation">
+
+        <div id="sideback" class="sidebar-header header-cover">
+            <div class="top-bar"></div>
+            <div style="text-align: center;" class="sidebar-image"><img src="images/logo-400.png"></div><a data-toggle="dropdown" id="sideusername" class="sidebar-brand" href="#settings-dropdown"><b class="caret"></b></a></div>
+        <ul class="nav sidebar-nav">
+            <li class="dropdown">
+                <ul id="settings-dropdown" class="dropdown-menu">
+                    <li><a href="#" id="sidenotifications" tabindex="-1">Notifications</a></li>
+                    <li><a href="#" id="sidcontact" tabindex="-1">Contact Me</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="sidemain">Support Overview</a></li>
+            <li class="divider"></li>
+            <li><a href="#" id="sidecase">Cases</a></li>
+            <li class="divider"></li>
+            <li class="dropdown">
+                <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">Escalation Requests<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a id="side_escalate_overview" href="#" tabindex="-1">Overview</a></li>
+                    <div id="side_escalated_cases"></div>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown">
+                <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">Following<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a id="side_following_overview" href="#" tabindex="-1">Overview</a></li>
+                    <div id="side_following_cases"></div>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+
+    <div class="wrapper">
+        <div class="constructor">
+            <div id="searchbox" style="display:none;">
+                <input id="searchcases" type="text" placeholder="Search">
+                <input id="casescareabout" type="button" onclick="searchMycustomers();" value="Cases I Care About">
+            </div>
+            <div id="loader" style="display:none;" class="holder"></div>
+            <div id="main_div" style="display:none; text-align: center; display: inline-table;">main div</div>
+            <div id="following_div" style="display: none;">following overview</div>
+            <div id="requests_div" style="display:none;">My Requests Overveiw</div>
+            <div id="table_div_case" style="display:none;"></div>
+            <div id="escalation_div" style="display: none;"></div>
+            <div id="case_details" style="text-align:center; background-color: #ffffff9e; display : none;">
+                <div id="caseSubject"></div>
+                <div style="background: linear-gradient(#a2bdd27d,#d0e7fb54); margin-top: -2.1%; " id="case_history">
+                    <h1 style=" text-decoration: underline;">Case History</h1>
+                    <div id="approve_deny_div2" style="display:none"></div>
+                    <div id="case_history_header_table">
+                        <table style="background: #a2bdd27d;width: 100%;">
+                            <thead>
+                                <th style="width: 25%">Date</th>
+                                <th style="width: 25%">User</th>
+                                <th style="width: 25%">Action</th>
+                                <th style="width: 15%">Additional <input type="button" id="open_c_history" value="All"></th>
+                            </thead>
+                        </table>
+                    </div>
+                    <div id="case_history_body_table"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/domo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/date_formatting.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/token.js"></script>
+    <script src="js/searches.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/casetable.js"></script>
+    <script src="js/casedetails.js"></script>
+    <script src="js/caseHistory.js"></script>
+    <script src="js/followCase.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/takeAction.js"></script>
+    <script src="js/escalate.js"></script>
+    <script src="js/following.js"></script>
+    <script src="js/mainDiv.js"></script>
+    <script src="js/following_cases.js"></script>
+    <script src="js/escalated_cases.js"></script>
+    <script src="js/escalate_overview.js"></script>
+    <script src="js/escalation_approve_deny.js"></script>
+</body>
+
+</html>

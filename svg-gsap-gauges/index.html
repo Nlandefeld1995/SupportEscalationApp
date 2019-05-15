@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SVG + GSAP gauges</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+
+  <div class="gauge-container">
+    <svg class="gauge" viewBox="0 0 150 150" preserveAscpectRatio="xMinYMin Meet">
+			<circle class="rail" r="67" cx="75" cy="75" />
+			<circle class="progress" r="67" data-target="84" cx="75" cy="75" />
+		</svg>
+    <span class="center percentage"><span class="value">0</span><span class="percentSymbol">%</span></span>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="gauge-container">
+    <svg class="gauge" viewBox="0 0 150 150" preserveAscpectRatio="xMinYMin Meet">
+			<circle class="rail" r="67" cx="75" cy="75" />
+			<circle class="progress" r="67" data-target="88" cx="75" cy="75" />
+		</svg>
+    <span class="center icon"><i class="fa fa-heart"></i></span>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="gauge-container">
+    <svg class="gauge" viewBox="0 0 150 150" preserveAscpectRatio="xMinYMin Meet">
+			<circle class="rail" r="67" cx="75" cy="75" />
+			<circle class="progress" r="67" data-target="50" cx="75" cy="75" />
+		</svg>
+    <span class="center icon"><i class="fa fa-trophy"></i></span>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="gauge-container">
+    <svg class="gauge" viewBox="0 0 150 150" preserveAscpectRatio="xMinYMin Meet">
+			<circle class="rail" r="67" cx="75" cy="75" />
+			<circle class="progress" r="67" data-target="75" cx="75" cy="75" />
+		</svg>
+    <span class="center icon"><i class="fa fa-diamond"></i></span>
+  </div>
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

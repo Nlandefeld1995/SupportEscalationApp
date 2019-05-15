@@ -1,0 +1,133 @@
+{
+    "name": "S.E.A.",
+    "version": "3.0.0",
+    "size": {
+        "width": 6,
+        "height": 4
+    },
+    "fullpage": true,
+    "mapping": [{
+            "alias": "cases",
+            "dataSetId": "271581c0-2675-4000-a5b8-74bc4971560f",
+            "fields": [{
+                    "alias": "subject_short",
+                    "columnName": "subject_short"
+                },
+                {
+                    "alias": "case_num",
+                    "columnName": "CaseNumber"
+                },
+                {
+                    "alias": "case_owner",
+                    "columnName": "Owner.Name"
+                },
+                {
+                    "alias": "case_created_date",
+                    "columnName": "CreatedDate"
+                },
+                {
+                    "alias": "case_status",
+                    "columnName": "Status"
+                },
+                {
+                    "alias": "company_name",
+                    "columnName": "Account.Name"
+                },
+                {
+                    "alias": "case_jira",
+                    "columnName": "Jira_Bug_Number__c"
+                },
+                {
+                    "alias": "case_priority",
+                    "columnName": "Priority"
+                },
+                {
+                    "alias": "customer_name",
+                    "columnName": "Contact.Name"
+                },
+                {
+                    "alias": "customer_email",
+                    "columnName": "Contact.Email"
+                },
+                {
+                    "alias": "case_id",
+                    "columnName": "Id"
+                },
+                {
+                    "alias": "LastContact",
+                    "columnName": "Last Contact"
+                },
+                {
+                    "alias": "DaysOpen",
+                    "columnName": "Days Open"
+                },
+                {
+                    "alias": "Account_csm",
+                    "columnName": "Account_CSM__c"
+                },
+                {
+                    "alias": "Days_Contact",
+                    "columnName": "Days Until Next Cust Contact"
+                },
+                {
+                    "alias": "DLastContact",
+                    "columnName": "Days Last Contact"
+                },
+                {
+                    "alias": "subject",
+                    "columnName": "subject"
+                },
+                {
+                    "alias": "support_manager",
+                    "columnName": "Support Manager"
+                },
+                {
+                    "alias": "ae",
+                    "columnName": "AE"
+                },
+                {
+                    "alias": "csm",
+                    "columnName": "CSM"
+                }
+            ]
+        },
+        {
+            "alias": "history",
+            "dataSetId": "6a9beb69-91e4-466e-a34e-a403d331cdad",
+            "fields": [{
+                    "alias": "comment",
+                    "columnName": "comment"
+                },
+                {
+                    "alias": "date",
+                    "columnName": "Date"
+                },
+                {
+                    "alias": "user",
+                    "columnName": "User"
+                },
+                {
+                    "alias": "action",
+                    "columnName": "Action"
+                }
+            ]
+        },
+        {
+            "alias": "description",
+            "dataSetId": "603e16c6-11f7-4af8-993b-19bf7a9a010f",
+            "fields": [{
+                "alias": "description",
+                "columnName": "Description"
+            }]
+        },
+        {
+            "alias": "managerList",
+            "dataSetId": "ad07f52b-cf9f-4b4e-aeb9-3a80605a84a9",
+            "fields": [{
+                "alias": "id",
+                "columnName": "Id"
+            }]
+        }
+    ],
+    "id": "5c8fae10-4cc2-463a-abb4-f308ffd5368e"
+}
